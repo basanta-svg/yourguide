@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultural Immersion Tour — Your Guide</title>
+<meta name="description" content="A 7-day cultural immersion tour through Paro, Thimphu, Punakha, and beyond — temples, festivals, and local life.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header">
+  <div class="container site-header__bar">
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo white.png" alt="Your Guide" class="logo__default">
+      <img src="assets/images/Logo.png" alt="Your Guide" class="logo__scrolled">
+    </a>
+
+    <div class="btn-row">
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="tours.html" class="nav-link active">Tours</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="menu-btn" class="menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon-lg"></i>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile overlay + drawer -->
+<div id="mobile-overlay" class="drawer-overlay"></div>
+<aside id="mobile-drawer" class="drawer">
+  <div class="drawer__bar">
+    <img src="assets/images/Logo.png" alt="Your Guide">
+    <button id="close-menu-btn" class="menu-toggle" aria-label="Close menu">
+      <i data-lucide="x" class="icon-lg"></i>
+    </button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="index.html" class="mobile-link drawer__link">Home</a>
+    <a href="destinations.html" class="mobile-link drawer__link">Destinations</a>
+    <a href="tours.html" class="mobile-link drawer__link">Tours</a>
+    <a href="about.html" class="mobile-link drawer__link">About</a>
+    <a href="contact.html" class="mobile-link drawer__link">Contact</a>
+  </nav>
+</aside>
+
+<!-- ============ HERO ============ -->
+<section class="hero page-hero page-hero--tall">
+  <img src="assets/images/mask.jpg" alt="Cultural Immersion Tour, Bhutan" class="hero__bg">
+  <div class="hero__overlay"></div>
+  <div class="hero__overlay hero__overlay--side"></div>
+
+  <div class="container hero__content fade-up">
+    <p class="hero__location">Tour Package</p>
+    <h1 class="hero__title">Cultural Immersion Tour</h1>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="bg-white section">
+  <div class="container">
+
+    <div class="tour-meta-row fade-up">
+      <span class="tour-meta-item"><i data-lucide="clock" class="icon"></i>7 Days</span>
+      <span class="tour-meta-item"><i data-lucide="users" class="icon"></i>2–10 people</span>
+    </div>
+
+    <p class="tour-description fade-up">Dive deep into Bhutan's living culture on this carefully paced 7-day journey. Visit ancient fortresses, masked dance ceremonies, share meals with local families, and explore the country's most iconic dzongs with guides who grew up in their shadows.</p>
+
+    <!-- ITINERARY -->
+    <div class="section-head fade-up">
+      <p class="eyebrow">Itinerary</p>
+      <h2 class="section-title">Day by Day</h2>
+    </div>
+
+    <div class="fade-up">
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">1</span>
+        <div>
+          <p class="itinerary-day__label">Day 1</p>
+          <h3 class="itinerary-day__title">Arrival in Paro</h3>
+          <p class="itinerary-day__text">Airport welcome, transfer to Thimphu, evening orientation walk.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">2</span>
+        <div>
+          <p class="itinerary-day__label">Day 2</p>
+          <h3 class="itinerary-day__title">Thimphu Highlights</h3>
+          <p class="itinerary-day__text">Buddha Dordenma, Tashichho Dzong, weekend market, National Textile Museum.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">3</span>
+        <div>
+          <p class="itinerary-day__label">Day 3</p>
+          <h3 class="itinerary-day__title">Punakha Valley</h3>
+          <p class="itinerary-day__text">Drive over Dochula Pass, Punakha Dzong, Chimi Lhakhang fertility temple.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">4</span>
+        <div>
+          <p class="itinerary-day__label">Day 4</p>
+          <h3 class="itinerary-day__title">Paro Valley</h3>
+          <p class="itinerary-day__text">Kyichu Lhakhang, Paro Dzong, National Museum, traditional farmhouse lunch.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">5</span>
+        <div>
+          <p class="itinerary-day__label">Day 5</p>
+          <h3 class="itinerary-day__title">Tiger's Nest Hike</h3>
+          <p class="itinerary-day__text">Full-day hike to Paro Taktsang monastery, 3,120m elevation.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">6</span>
+        <div>
+          <p class="itinerary-day__label">Day 6</p>
+          <h3 class="itinerary-day__title">Village Homestay</h3>
+          <p class="itinerary-day__text">Authentic village experience, traditional cooking class, local weaving.</p>
+        </div>
+      </div>
+      <div class="itinerary-day">
+        <span class="itinerary-day__num">7</span>
+        <div>
+          <p class="itinerary-day__label">Day 7</p>
+          <h3 class="itinerary-day__title">Departure</h3>
+          <p class="itinerary-day__text">Morning at leisure, airport transfer.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ WHAT'S INCLUDED ============ -->
+<section class="bg-white section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">The Details</p>
+      <h2 class="section-title">What's Included</h2>
+    </div>
+
+    <div class="included-grid fade-up">
+      <span class="included-item"><i data-lucide="check" class="icon"></i>Licensed local guide</span>
+      <span class="included-item"><i data-lucide="check" class="icon"></i>All accommodation (3-star)</span>
+      <span class="included-item"><i data-lucide="check" class="icon"></i>All meals</span>
+      <span class="included-item"><i data-lucide="check" class="icon"></i>Airport transfers</span>
+      <span class="included-item"><i data-lucide="check" class="icon"></i>Entry fees &amp; permits</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK CTA ============ -->
+<section class="bg-sand section">
+  <div class="container cta-section__inner fade-up">
+    <h2 class="section-title">Ready for This Journey?</h2>
+    <p class="cta-section__text">Spaces on this itinerary are limited to small groups. Send an inquiry and our Thimphu team will confirm dates and tailor the details to you.</p>
+    <a href="contact.html" class="btn btn--dark btn--block">
+      Book This Tour <i data-lucide="arrow-right" class="icon"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="site-footer">
+  <div class="container section">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/images/Logo.png" alt="Your Guide">
+        <p>Expert local guidance for authentic journeys through the Last Shangri-La.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20"></line>
+              <line x1="20" y1="4" x2="4" y2="20"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Our Tours</h4>
+        <ul class="footer-links">
+          <li><a href="tours.html">Cultural Tours</a></li>
+          <li><a href="tours.html">Trekking &amp; Adventure</a></li>
+          <li><a href="tours.html">Luxury Escapes</a></li>
+          <li><a href="tours.html">Wildlife &amp; Nature</a></li>
+          <li><a href="tours.html">Festival Tours</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon"></i><span>Norzin Lam, Thimphu, Bhutan</span></li>
+          <li><i data-lucide="phone" class="icon"></i><span>+975 17 000 000</span></li>
+          <li><i data-lucide="mail" class="icon"></i><span>info@yourguide.bt</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__row">
+        <p>&copy; 2026 Your Guide. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p class="footer-credit">Designed and developed by <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

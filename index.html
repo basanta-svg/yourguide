@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Guide — Discover Bhutan, Your Way</title>
+<meta name="description" content="Expert local guidance for authentic journeys through the Last Shangri-La.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header">
+  <div class="container site-header__bar">
+
+    <a href="#home" class="logo">
+      <img src="assets/images/logo white.png" alt="Your Guide" class="logo__default">
+      <img src="assets/images/Logo.png" alt="Your Guide" class="logo__scrolled">
+    </a>
+
+    <div class="btn-row">
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="tours.html" class="nav-link">Tours</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="menu-btn" class="menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon-lg"></i>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile overlay + drawer -->
+<div id="mobile-overlay" class="drawer-overlay"></div>
+<aside id="mobile-drawer" class="drawer">
+  <div class="drawer__bar">
+    <img src="assets/images/Logo.png" alt="Your Guide">
+    <button id="close-menu-btn" class="menu-toggle" aria-label="Close menu">
+      <i data-lucide="x" class="icon-lg"></i>
+    </button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="#home" class="mobile-link drawer__link">Home</a>
+    <a href="destinations.html" class="mobile-link drawer__link">Destinations</a>
+    <a href="tours.html" class="mobile-link drawer__link">Tours</a>
+    <a href="about.html" class="mobile-link drawer__link">About</a>
+    <a href="contact.html" class="mobile-link drawer__link">Contact</a>
+  </nav>
+</aside>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <img src="assets/images/taktshang.webp" alt="Bhutanese monastery shrouded in mountain mist" class="hero__bg">
+  <div class="hero__overlay"></div>
+  <div class="hero__overlay hero__overlay--side"></div>
+
+  <div class="container hero__content fade-up">
+   
+    <h1 class="hero__title">Discover Bhutan.<br>Your Way.</h1>
+    <p class="hero__subtitle">Expert local guidance for authentic journeys through the Last Shangri-La. Crafted itineraries, trusted expertise, unforgettable experiences.</p>
+  </div>
+
+  <div class="hero__scroll">
+    <span class="hero__scroll-label">Scroll</span>
+    <span class="hero__scroll-line scroll-pulse"></span>
+  </div>
+</section>
+
+<!-- ============ FEATURED DESTINATIONS ============ -->
+<section id="destinations" class="container section">
+  <div class="section-head fade-up">
+    <p class="eyebrow">Featured Destinations</p>
+    <h2 class="section-title">Where Will You Go?</h2>
+  </div>
+
+  <div class="bento fade-up">
+
+    <a href="destinations.html" class="dest-card dest-card--tall">
+      <img src="assets/images/Tashigang.jpg" alt="Tiger's Nest, Paro, Bhutan" class="dest-card__img">
+      <div class="dest-card__overlay"></div>
+      <div class="dest-card__caption">
+        <h3 class="dest-card__title">Tiger's Nest</h3>
+        <p class="dest-card__location"><i data-lucide="map-pin" class="icon-sm"></i>Paro, Bhutan</p>
+      </div>
+    </a>
+
+    <div class="bento__stack">
+      <a href="destinations.html" class="dest-card dest-card--wide">
+        <img src="assets/images/Lhuentse dzong.jpg" alt="Punakha Dzong, Punakha, Bhutan" class="dest-card__img">
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__caption">
+          <h3 class="dest-card__title">Punakha Dzong</h3>
+          <p class="dest-card__location"><i data-lucide="map-pin" class="icon-sm"></i>Punakha, Bhutan</p>
+        </div>
+      </a>
+      <a href="destinations.html" class="dest-card dest-card--wide">
+        <img src="assets/images/thimphu.jpg" alt="Thimphu Valley, Thimphu, Bhutan" class="dest-card__img">
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__caption">
+          <h3 class="dest-card__title">Thimphu Valley</h3>
+          <p class="dest-card__location"><i data-lucide="map-pin" class="icon-sm"></i>Thimphu, Bhutan</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="dest-more fade-up">
+    <a href="destinations.html" class="link-arrow link-arrow--muted">
+      View all destinations
+      <i data-lucide="arrow-right" class="icon"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ TOUR PACKAGES ============ -->
+<section id="tours" class="bg-sand section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Tour Packages</p>
+      <h2 class="section-title">Journeys Crafted for Every Traveller</h2>
+    </div>
+
+    <div class="tours-grid fade-up">
+
+      <div class="tour-card">
+        <span class="tour-card__badge">Most Popular</span>
+        <img src="assets/images/mask.jpg" alt="Cultural Immersion Tour" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>7 Days</span></p>
+          <h3 class="tour-card__title">Cultural Immersion Tour</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Temples, festivals, and local life — a deep dive into Bhutan's living culture.</p>
+              <a href="itinerary.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="assets/images/jomolhari 2.jpg" alt="Himalayan Trekking" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>10 Days</span></p>
+          <h3 class="tour-card__title">Himalayan Trekking</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Traverse high-altitude trails with panoramic views of the Eastern Himalayas.</p>
+              <a href="contact.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="assets/images/The Mindful destination tariff 1.jpg" alt="Luxury Escape" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>8 Days</span></p>
+          <h3 class="tour-card__title">Luxury Escape</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Serene retreats and mindful stays set against Bhutan's quietest valleys.</p>
+              <a href="contact.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="assets/images/birdwatching10.jpg" alt="Wildlife & Nature" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
+          <h3 class="tour-card__title">Wildlife &amp; Nature</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Spot rare birds and native wildlife across Bhutan's protected forests.</p>
+              <a href="contact.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="assets/images/exp_cultural_tour.png" alt="Festival & Monastery Tour" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>5 Days</span></p>
+          <h3 class="tour-card__title">Festival &amp; Monastery Tour</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Time your visit with Bhutan's vibrant tsechus and cliffside monasteries.</p>
+              <a href="contact.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="assets/images/cycling.png" alt="Cycling Adventure" class="tour-card__img">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
+          <h3 class="tour-card__title">Cycling Adventure</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Ride quiet mountain roads through rice terraces and fluttering prayer flags.</p>
+              <a href="contact.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tours-more fade-up">
+      <a href="tours.html" class="btn btn--outline">
+        View all tour packages
+        <i data-lucide="arrow-right" class="icon"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="about" class="bg-white section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2 class="section-title">The Your Guide Difference</h2>
+    </div>
+
+    <div class="features-grid fade-up">
+      <div class="feature">
+        <i data-lucide="map-pin" class="icon-xl feature__icon"></i>
+        <h3 class="feature__title">Local Expertise</h3>
+        <p class="feature__text">Our guides are born and raised in Bhutan, offering insight and access no guidebook can match.</p>
+      </div>
+      <div class="feature">
+        <i data-lucide="sparkles" class="icon-xl feature__icon"></i>
+        <h3 class="feature__title">Personalised Itineraries</h3>
+        <p class="feature__text">Every journey is tailored to your pace, interests, and travel style — no cookie-cutter tours.</p>
+      </div>
+      <div class="feature">
+        <i data-lucide="phone-call" class="icon-xl feature__icon"></i>
+        <h3 class="feature__title">24/7 On-Ground Support</h3>
+        <p class="feature__text">From arrival to departure, our team is with you every step, ready for anything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="bg-sand section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Traveller Stories</p>
+      <h2 class="section-title">Heard From Our Guests</h2>
+    </div>
+
+    <div class="testimonials-grid fade-up">
+
+      <div class="testimonial-card">
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">"Every detail was thought through. Our guide knew exactly when to speak and when to let the silence of the monasteries speak for itself."</p>
+        <div>
+          <p class="testimonial-name">Elena Marsh</p>
+          <p class="testimonial-meta">United Kingdom &middot; Cultural Tour</p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">"The trek to Jomolhari base camp was the hardest and most rewarding thing I've done. Logistics were flawless from day one."</p>
+        <div>
+          <p class="testimonial-name">Rikuto Sato</p>
+          <p class="testimonial-meta">Japan &middot; Himalayan Trekking</p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">"A seamless, quietly luxurious trip. Bhutan felt personal rather than touristic — exactly what we hoped for."</p>
+        <div>
+          <p class="testimonial-name">Amara Okafor</p>
+          <p class="testimonial-meta">Nigeria &middot; Luxury Escape</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ START YOUR JOURNEY ============ -->
+<section class="journey">
+  <div class="journey__media">
+    <img src="assets/images/laya.jpg" alt="Serene Bhutan mountain valley">
+  </div>
+  <div class="bg-sand journey__panel fade-up">
+    <div>
+      <p class="eyebrow">Start Your Journey</p>
+      <h2 class="journey__title">Start Planning Your Journey</h2>
+      <p class="journey__text">Tell us your dream trip and we'll craft a personalised Bhutan itinerary just for you. Expert guidance, seamless logistics, and memories that last a lifetime.</p>
+      <a href="contact.html" class="btn btn--dark">
+        Send an Enquiry <i data-lucide="arrow-right" class="icon"></i>
+      </a>
+      <p class="journey__note">Free consultation. No commitment required.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="site-footer">
+  <div class="container section">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/images/Logo.png" alt="Your Guide">
+        <p>Expert local guidance for authentic journeys through the Last Shangri-La.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20"></line>
+              <line x1="20" y1="4" x2="4" y2="20"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Our Tours</h4>
+        <ul class="footer-links">
+          <li><a href="tours.html">Cultural Tours</a></li>
+          <li><a href="tours.html">Trekking &amp; Adventure</a></li>
+          <li><a href="tours.html">Luxury Escapes</a></li>
+          <li><a href="tours.html">Wildlife &amp; Nature</a></li>
+          <li><a href="tours.html">Festival Tours</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon"></i><span>Norzin Lam, Thimphu, Bhutan</span></li>
+          <li><i data-lucide="phone" class="icon"></i><span>+975 17 000 000</span></li>
+          <li><i data-lucide="mail" class="icon"></i><span>info@yourguide.bt</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__row">
+        <p>&copy; 2026 Your Guide. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p class="footer-credit">Designed and developed by <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

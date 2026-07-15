@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations — Your Guide</title>
+<meta name="description" content="Every valley tells a story. Explore Bhutan's destinations, from Paro Valley to the remote Haa Valley.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header">
+  <div class="container site-header__bar">
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo white.png" alt="Your Guide" class="logo__default">
+      <img src="assets/images/Logo.png" alt="Your Guide" class="logo__scrolled">
+    </a>
+
+    <div class="btn-row">
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link active">Destinations</a>
+        <a href="tours.html" class="nav-link">Tours</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="menu-btn" class="menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon-lg"></i>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile overlay + drawer -->
+<div id="mobile-overlay" class="drawer-overlay"></div>
+<aside id="mobile-drawer" class="drawer">
+  <div class="drawer__bar">
+    <img src="assets/images/Logo.png" alt="Your Guide">
+    <button id="close-menu-btn" class="menu-toggle" aria-label="Close menu">
+      <i data-lucide="x" class="icon-lg"></i>
+    </button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="index.html" class="mobile-link drawer__link">Home</a>
+    <a href="destinations.html" class="mobile-link drawer__link">Destinations</a>
+    <a href="tours.html" class="mobile-link drawer__link">Tours</a>
+    <a href="about.html" class="mobile-link drawer__link">About</a>
+    <a href="contact.html" class="mobile-link drawer__link">Contact</a>
+  </nav>
+</aside>
+
+<!-- ============ HERO ============ -->
+<section class="hero page-hero">
+  <img src="assets/images/buddha point.jpg" alt="Bhutanese mountain valley and monastery scenery" class="hero__bg">
+  <div class="hero__overlay"></div>
+  <div class="hero__overlay hero__overlay--side"></div>
+
+  <div class="container hero__content fade-up">
+    <h1 class="hero__title">Destinations</h1>
+  </div>
+</section>
+
+<!-- ============ INTRODUCTION ============ -->
+<section class="bg-sand section">
+  <div class="container intro fade-up">
+    <p class="eyebrow">Our Philosophy</p>
+    <h2 class="section-title">The Last Shangri-La</h2>
+    <p class="intro__text">Bhutan measures its success not in GDP but in Gross National Happiness. Every destination here carries that philosophy — unhurried, authentic, and deeply connected to nature and tradition. Our local guides know each valley, trail, and dzong intimately.</p>
+  </div>
+</section>
+
+<!-- ============ DESTINATION LIST ============ -->
+<section class="bg-white section">
+  <div class="container">
+    <div class="dest-grid fade-up">
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/Tashigang.jpg" alt="Paro Valley, Bhutan">
+          <span class="dcard__tag">Iconic</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Western Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Paro Valley</h3>
+          <p class="dcard__subtitle">Home of the iconic Tiger's Nest</p>
+          <p class="dcard__text">Paro is Bhutan's most visited valley and for good reason. The Paro Taktsang monastery — Tiger's Nest — clings to a sheer cliff 900 metres above the valley floor. Beyond the monastery, Paro offers rice paddies, ancient dzongs, and the country's only international airport.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Tiger's Nest Monastery</li>
+            <li><i data-lucide="chevron-right"></i>Paro Dzong</li>
+            <li><i data-lucide="chevron-right"></i>National Museum of Bhutan</li>
+            <li><i data-lucide="chevron-right"></i>Drukgyel Dzong ruins</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>March – May, Sep – Nov</span>
+            <span>Moderate</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/thimphu.jpg" alt="Thimphu, Bhutan">
+          <span class="dcard__tag">Capital</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Western Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Thimphu</h3>
+          <p class="dcard__subtitle">The capital with no traffic lights</p>
+          <p class="dcard__text">Thimphu is the world's only capital city without a single traffic light — police officers direct traffic at the main intersection. It blends ancient Bhutanese tradition with a quietly modern sensibility. Explore weekend markets, the giant Buddha Dordenma statue, and the vibrant arts scene.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Buddha Dordenma Statue</li>
+            <li><i data-lucide="chevron-right"></i>Tashichho Dzong</li>
+            <li><i data-lucide="chevron-right"></i>Weekend Market</li>
+            <li><i data-lucide="chevron-right"></i>National Textile Museum</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>Year-round</span>
+            <span>Easy</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/Wangdue.jpg" alt="Punakha, Bhutan">
+          <span class="dcard__tag">Heritage</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Central Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Punakha</h3>
+          <p class="dcard__subtitle">The ancient capital of Bhutan</p>
+          <p class="dcard__text">Punakha served as Bhutan's capital until 1955 and remains one of the most breathtaking destinations in the country. The Punakha Dzong, built at the confluence of two rivers, is considered the most beautiful dzong in Bhutan. The valley is warmer and lower than most, making it ideal year-round.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Punakha Dzong</li>
+            <li><i data-lucide="chevron-right"></i>Chimi Lhakhang</li>
+            <li><i data-lucide="chevron-right"></i>Suspension Bridge</li>
+            <li><i data-lucide="chevron-right"></i>Khamsum Yulley Namgyal Chorten</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>Feb – Mar, Oct – Dec</span>
+            <span>Easy</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/Lhuentse dzong.jpg" alt="Bumthang Valley, Bhutan">
+          <span class="dcard__tag">Spiritual</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Central Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Bumthang Valley</h3>
+          <p class="dcard__subtitle">The spiritual heartland of Bhutan</p>
+          <p class="dcard__text">Bumthang is considered the spiritual heartland of Bhutan, home to some of the country's oldest and most sacred temples. The valley's four sub-valleys — Chokhor, Tang, Ura, and Chhume — each have their own distinct character, from buckwheat fields to ancient lhakhangs.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Jambay Lhakhang</li>
+            <li><i data-lucide="chevron-right"></i>Kurjey Lhakhang</li>
+            <li><i data-lucide="chevron-right"></i>Tamshing Monastery</li>
+            <li><i data-lucide="chevron-right"></i>Ura Village</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>Apr – Jun, Sep – Nov</span>
+            <span>Easy to Moderate</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/laya.jpg" alt="Gangtey and Phobjikha Valley, Bhutan">
+          <span class="dcard__tag">Wildlife</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Central Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Gangtey &amp; Phobjikha</h3>
+          <p class="dcard__subtitle">Valley of the black-necked cranes</p>
+          <p class="dcard__text">The Phobjikha valley is a glacial valley and one of the most important wildlife preserves in Bhutan. Every winter, endangered black-necked cranes migrate here from the Tibetan plateau. The valley is also home to the magnificent Gangtey Monastery, perched on a forested hill above the wetlands.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Black-necked Crane Festival (Nov)</li>
+            <li><i data-lucide="chevron-right"></i>Gangtey Monastery</li>
+            <li><i data-lucide="chevron-right"></i>Crane Information Centre</li>
+            <li><i data-lucide="chevron-right"></i>Valley hiking trails</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>Oct – Feb (crane season)</span>
+            <span>Easy</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dcard">
+        <div class="dcard__media">
+          <img src="assets/images/jomolhari 1.jpg" alt="Haa Valley, Bhutan">
+          <span class="dcard__tag">Off the Beaten Path</span>
+          <span class="dcard__region"><i data-lucide="map-pin" class="icon-sm"></i>Western Bhutan</span>
+        </div>
+        <div class="dcard__body">
+          <h3 class="dcard__title">Haa Valley</h3>
+          <p class="dcard__subtitle">Bhutan's most remote and pristine valley</p>
+          <p class="dcard__text">Only opened to tourists in 2002, Haa Valley remains one of Bhutan's least-visited and most pristine destinations. Bordered by high Himalayan peaks and dense forests, it offers exceptional trekking, traditional village life, and a rare glimpse of Bhutan untouched by tourism.</p>
+          <p class="dcard__highlights-label">Highlights</p>
+          <ul class="dcard__highlights">
+            <li><i data-lucide="chevron-right"></i>Lhakhang Karpo (White Temple)</li>
+            <li><i data-lucide="chevron-right"></i>Lhakhang Nagpo (Black Temple)</li>
+            <li><i data-lucide="chevron-right"></i>Haa Summer Festival</li>
+            <li><i data-lucide="chevron-right"></i>High-altitude trekking</li>
+          </ul>
+          <div class="dcard__meta">
+            <span class="dcard__meta-date"><i data-lucide="clock"></i>May – Sep</span>
+            <span>Moderate to Challenging</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ READY TO EXPLORE CTA ============ -->
+<section class="cta-band section">
+  <img src="assets/images/Dochula1.jpg" alt="" class="cta-band__bg">
+  <div class="cta-band__overlay"></div>
+
+  <div class="container cta-band__content fade-up">
+    <h2 class="section-title">Ready to Explore?</h2>
+    <p class="cta-section__text">Tell us which destinations call to you and we'll build a personalised itinerary around them.</p>
+    <a href="contact.html" class="btn btn--outline-white">
+      Plan My Trip <i data-lucide="arrow-right" class="icon"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="site-footer">
+  <div class="container section">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/images/Logo.png" alt="Your Guide">
+        <p>Expert local guidance for authentic journeys through the Last Shangri-La.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20"></line>
+              <line x1="20" y1="4" x2="4" y2="20"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Our Tours</h4>
+        <ul class="footer-links">
+          <li><a href="tours.html">Cultural Tours</a></li>
+          <li><a href="tours.html">Trekking &amp; Adventure</a></li>
+          <li><a href="tours.html">Luxury Escapes</a></li>
+          <li><a href="tours.html">Wildlife &amp; Nature</a></li>
+          <li><a href="tours.html">Festival Tours</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon"></i><span>Norzin Lam, Thimphu, Bhutan</span></li>
+          <li><i data-lucide="phone" class="icon"></i><span>+975 17 000 000</span></li>
+          <li><i data-lucide="mail" class="icon"></i><span>info@yourguide.bt</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__row">
+        <p>&copy; 2026 Your Guide. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p class="footer-credit">Designed and developed by <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

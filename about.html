@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Your Guide</title>
+<meta name="description" content="Born in Bhutan, built for explorers. Meet the Thimphu-based guides behind Your Guide.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header">
+  <div class="container site-header__bar">
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo white.png" alt="Your Guide" class="logo__default">
+      <img src="assets/images/Logo.png" alt="Your Guide" class="logo__scrolled">
+    </a>
+
+    <div class="btn-row">
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="tours.html" class="nav-link">Tours</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="menu-btn" class="menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon-lg"></i>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile overlay + drawer -->
+<div id="mobile-overlay" class="drawer-overlay"></div>
+<aside id="mobile-drawer" class="drawer">
+  <div class="drawer__bar">
+    <img src="assets/images/Logo.png" alt="Your Guide">
+    <button id="close-menu-btn" class="menu-toggle" aria-label="Close menu">
+      <i data-lucide="x" class="icon-lg"></i>
+    </button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="index.html" class="mobile-link drawer__link">Home</a>
+    <a href="destinations.html" class="mobile-link drawer__link">Destinations</a>
+    <a href="tours.html" class="mobile-link drawer__link">Tours</a>
+    <a href="about.html" class="mobile-link drawer__link">About</a>
+    <a href="contact.html" class="mobile-link drawer__link">Contact</a>
+  </nav>
+</aside>
+
+<!-- ============ HERO ============ -->
+<section class="hero page-hero">
+  <img src="assets/images/memorial chorten.jpg" alt="Traditional Bhutanese chorten against a mountain sky" class="hero__bg">
+  <div class="hero__overlay"></div>
+  <div class="hero__overlay hero__overlay--side"></div>
+
+  <div class="container hero__content fade-up">
+    <h1 class="hero__title">About Us</h1>
+  </div>
+</section>
+
+<!-- ============ OUR STORY & STATS ============ -->
+<section class="bg-white section">
+  <div class="container">
+    <div class="story fade-up">
+      <div class="story__media">
+        <img src="assets/images/Lhuentse dzong.jpg" alt="A Bhutanese dzong rising through mountain mist">
+      </div>
+      <div class="story__text">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">A Kingdom Deserves More Than a Checklist</h2>
+        <p>Your Guide was founded in 2009 by Dorji Wangchuk, a licensed guide who had spent a decade leading international travellers through Bhutan's most remote corners. He noticed the same thing on every trip: visitors left having seen Bhutan, but not having felt it.</p>
+        <p>So he built something different — a company where every itinerary is designed by someone who grew up here. Where the monastery visit includes a conversation with the monk, not just a photo. Where the trek ends at a farmhouse table, not a hotel lobby. Where Bhutan is experienced, not just ticked off.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORE VALUES ============ -->
+<section class="values-section section">
+  <img src="assets/images/Dochula1.jpg" alt="" class="values-section__bg">
+  <div class="values-section__overlay"></div>
+
+  <div class="container values-section__inner">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Our Principles</p>
+      <h2 class="section-title">What We Stand For</h2>
+    </div>
+
+    <div class="values-grid fade-up">
+      <div class="value">
+        <div class="value__icon"><i data-lucide="map-pinned"></i></div>
+        <h3 class="value__title">Local First</h3>
+        <p class="value__text">Every guide, driver, and partner is Bhutanese. Your money stays in the communities you visit.</p>
+      </div>
+      <div class="value">
+        <div class="value__icon"><i data-lucide="hourglass"></i></div>
+        <h3 class="value__title">Depth Over Speed</h3>
+        <p class="value__text">We design itineraries that slow down. Fewer sites, more meaning. You leave knowing Bhutan, not just having seen it.</p>
+      </div>
+      <div class="value">
+        <div class="value__icon"><i data-lucide="leaf"></i></div>
+        <h3 class="value__title">Responsible Tourism</h3>
+        <p class="value__text">We follow Bhutan's high-value, low-impact philosophy. Small groups, minimal footprint, maximum respect for culture and nature.</p>
+      </div>
+      <div class="value">
+        <div class="value__icon"><i data-lucide="badge-check"></i></div>
+        <h3 class="value__title">Honest Expertise</h3>
+        <p class="value__text">We tell you what's worth your time and what isn't. No filler days, no commission-driven detours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="bg-white section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Our Guides</p>
+      <h2 class="section-title">The People Behind Your Journey</h2>
+    </div>
+
+    <div class="team-grid fade-up">
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="assets/images/gallery_monk.png" alt="Dorji Wangchuk, Founder & Lead Guide">
+        </div>
+        <div class="team-card__content">
+          <h3 class="team-card__name">Dorji Wangchuk</h3>
+          <p class="team-card__role">Founder &amp; Lead Guide</p>
+          <p class="team-card__bio">Licensed guide since 2001. Dorji has led over 800 tours across every district of Bhutan and speaks four languages. He designed every itinerary in our catalogue.</p>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="assets/images/laya 4.jpg" alt="Pema Lhamo, Cultural Guide & Coordinator">
+        </div>
+        <div class="team-card__content">
+          <h3 class="team-card__name">Pema Lhamo</h3>
+          <p class="team-card__role">Cultural Guide &amp; Coordinator</p>
+          <p class="team-card__bio">A Thimphu native with a degree in Bhutanese history, Pema specialises in festival tours and cultural immersion programmes. She's the reason our guests leave with stories.</p>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="assets/images/snowmentrek4.jpg" alt="Tshering Namgay, Senior Trekking Guide">
+        </div>
+        <div class="team-card__content">
+          <h3 class="team-card__name">Tshering Namgay</h3>
+          <p class="team-card__role">Senior Trekking Guide</p>
+          <p class="team-card__bio">Tshering has summited Jhomolhari twice and completed the Snowman Trek four times. He leads all our high-altitude programmes and is certified in wilderness first aid.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="bg-sand section">
+  <div class="container">
+    <p class="eyebrow fade-up">Certified, Licensed &amp; Trusted</p>
+
+    <div class="badges-row fade-up">
+      <div class="badge">
+        <i data-lucide="shield-check" class="icon-xl badge__icon"></i>
+        <p class="badge__title">Tourism Council of Bhutan</p>
+        <p class="badge__text">Fully licensed tour operator</p>
+      </div>
+      <div class="badge">
+        <i data-lucide="badge-check" class="icon-xl badge__icon"></i>
+        <p class="badge__title">ABTO Member</p>
+        <p class="badge__text">Association of Bhutanese Tour Operators</p>
+      </div>
+      <div class="badge">
+        <i data-lucide="leaf" class="icon-xl badge__icon"></i>
+        <p class="badge__title">Sustainable Tourism</p>
+        <p class="badge__text">Committed to Bhutan's GNH principles</p>
+      </div>
+      <div class="badge">
+        <i data-lucide="award" class="icon-xl badge__icon"></i>
+        <p class="badge__title">15+ Years</p>
+        <p class="badge__text">Established 2009, Thimphu</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ READY TO EXPLORE CTA ============ -->
+<section class="cta-band section">
+  <img src="assets/images/thimphu.jpg" alt="" class="cta-band__bg">
+  <div class="cta-band__overlay"></div>
+
+  <div class="container cta-band__content fade-up">
+    <h2 class="section-title">Ready to See Bhutan Through Local Eyes?</h2>
+    <p class="cta-section__text">Browse our tours or reach out directly — we'll help you plan the journey that's right for you.</p>
+    <div class="btn-row">
+      <a href="tours.html" class="btn btn--white">View Tour Packages</a>
+      <a href="contact.html" class="btn btn--outline-white">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="site-footer">
+  <div class="container section">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/images/Logo.png" alt="Your Guide">
+        <p>Expert local guidance for authentic journeys through the Last Shangri-La.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20"></line>
+              <line x1="20" y1="4" x2="4" y2="20"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Our Tours</h4>
+        <ul class="footer-links">
+          <li><a href="tours.html">Cultural Tours</a></li>
+          <li><a href="tours.html">Trekking &amp; Adventure</a></li>
+          <li><a href="tours.html">Luxury Escapes</a></li>
+          <li><a href="tours.html">Wildlife &amp; Nature</a></li>
+          <li><a href="tours.html">Festival Tours</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon"></i><span>Norzin Lam, Thimphu, Bhutan</span></li>
+          <li><i data-lucide="phone" class="icon"></i><span>+975 17 000 000</span></li>
+          <li><i data-lucide="mail" class="icon"></i><span>info@yourguide.bt</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__row">
+        <p>&copy; 2026 Your Guide. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p class="footer-credit">Designed and developed by <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
