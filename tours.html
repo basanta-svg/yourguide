@@ -76,10 +76,16 @@
 <section class="bg-sand section">
   <div class="container">
 
+    <div class="tour-filters fade-up" role="tablist" aria-label="Filter tours by category">
+      <button type="button" class="tour-filter active" data-filter="all">All Tours</button>
+      <button type="button" class="tour-filter" data-filter="culture">Culture</button>
+      <button type="button" class="tour-filter" data-filter="festival">Festival</button>
+      <button type="button" class="tour-filter" data-filter="adventure">Adventure</button>
+    </div>
+
     <div class="tours-grid fade-up">
 
-      <div class="tour-card">
-        <span class="tour-card__badge">Most Popular</span>
+      <div class="tour-card" data-category="culture">
         <img src="assets/images/mask.jpg" alt="Cultural Immersion Tour" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -97,7 +103,7 @@
         </div>
       </div>
 
-      <div class="tour-card">
+      <div class="tour-card" data-category="adventure">
         <img src="assets/images/jomolhari 2.jpg" alt="Himalayan Trekking" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -115,7 +121,7 @@
         </div>
       </div>
 
-      <div class="tour-card">
+      <div class="tour-card" data-category="culture">
         <img src="assets/images/The Mindful destination tariff 1.jpg" alt="Luxury Escape" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -133,7 +139,7 @@
         </div>
       </div>
 
-      <div class="tour-card">
+      <div class="tour-card" data-category="adventure">
         <img src="assets/images/birdwatching10.jpg" alt="Wildlife & Nature" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -151,7 +157,7 @@
         </div>
       </div>
 
-      <div class="tour-card">
+      <div class="tour-card" data-category="festival culture">
         <img src="assets/images/exp_cultural_tour.png" alt="Festival & Monastery Tour" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -169,7 +175,7 @@
         </div>
       </div>
 
-      <div class="tour-card">
+      <div class="tour-card" data-category="adventure">
         <img src="assets/images/cycling.png" alt="Cycling Adventure" class="tour-card__img">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -215,6 +221,11 @@
         <img src="assets/images/Logo.png" alt="Your Guide">
         <p>Expert local guidance for authentic journeys through the Last Shangri-La.</p>
         <div class="social-links">
+          <a href="#" aria-label="Facebook" class="social-btn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
           <a href="#" aria-label="Instagram" class="social-btn">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5"></rect>
@@ -222,15 +233,16 @@
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
-          <a href="#" aria-label="Facebook" class="social-btn">
+          <a href="#" aria-label="YouTube" class="social-btn">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              <rect x="2" y="5" width="20" height="14" rx="4"></rect>
+              <path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"></path>
             </svg>
           </a>
-          <a href="#" aria-label="Twitter" class="social-btn">
+          <a href="#" aria-label="TikTok" class="social-btn">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="4" x2="20" y2="20"></line>
-              <line x1="20" y1="4" x2="4" y2="20"></line>
+              <path d="M14 3v10.8a3.7 3.7 0 1 1-3.2-3.66"></path>
+              <path d="M14 3c.35 2.4 2.1 4.3 4.7 4.6v3a7.6 7.6 0 0 1-4.7-1.6"></path>
             </svg>
           </a>
         </div>
@@ -277,7 +289,7 @@
           <a href="#">Terms of Service</a>
         </div>
       </div>
-      <p class="footer-credit">Designed and developed by <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
+      <p class="footer-credit">Designed And Developed By <a href="https://abit.bt" target="_blank" rel="noopener">aBit Private Limited</a></p>
     </div>
   </div>
 </footer>
