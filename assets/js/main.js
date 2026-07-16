@@ -315,19 +315,22 @@ if (contactForm) {
 const tourFilters = document.querySelectorAll('.tour-filter');
 const tourCards = document.querySelectorAll('.tour-card');
 if (tourFilters.length && tourCards.length) {
-  tourFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tourFilters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.dataset.filter;
-      tourCards.forEach(card => {
-        const categories = (card.dataset.category || '').split(' ');
-        const show = filter === 'all' || categories.includes(filter);
-        card.classList.toggle('is-hidden', !show);
-      });
+  function applyTourFilter(filter) {
+    tourFilters.forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+    tourCards.forEach(card => {
+      const categories = (card.dataset.category || '').split(' ');
+      const show = filter === 'all' || categories.includes(filter);
+      card.classList.toggle('is-hidden', !show);
     });
+  }
+
+  tourFilters.forEach(btn => {
+    btn.addEventListener('click', () => applyTourFilter(btn.dataset.filter));
   });
+
+  const requestedFilter = new URLSearchParams(window.location.search).get('filter');
+  const matchedFilter = [...tourFilters].some(b => b.dataset.filter === requestedFilter);
+  if (requestedFilter && matchedFilter) applyTourFilter(requestedFilter);
 }
 
 // Itinerary day accordion (itinerary.html)
