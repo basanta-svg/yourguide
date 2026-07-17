@@ -277,31 +277,23 @@ h1, h2, h3, h4 {
   height: 5rem;
 }
 .logo {
-  position: relative;
-  display: inline-block;
-  height: 4rem;
-}
-.logo__default {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
   height: 100%;
+  padding-inline: 1rem;
+  background-color: rgba(252, 251, 249, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 0.75rem 0.75rem;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+.site-header.scrolled .logo {
+  background-color: transparent;
+  backdrop-filter: none;
+  border-radius: 0;
+}
+.logo img {
+  height: 60%;
   width: auto;
-  transition: opacity 0.3s ease;
-}
-.logo__scrolled {
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: left center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.site-header.scrolled .logo__default {
-  opacity: 0;
-}
-.site-header.scrolled .logo__scrolled {
-  opacity: 1;
 }
 .nav {
   display: none;
@@ -682,27 +674,16 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 9rem;
+  width: 12rem;
 }
 .partners-item img {
-  max-height: 3rem;
+  max-height: 4.5rem;
   width: auto;
-  filter: grayscale(100%);
-  opacity: 0.55;
-  transition: filter 0.3s ease, opacity 0.3s ease;
-}
-.partners-item:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
 }
 .partners-item--dup {
   display: none;
 }
 @media (max-width: 1023.98px) {
-  .partners-marquee {
-    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-  }
   .partners-item--dup {
     display: flex;
   }
@@ -714,9 +695,9 @@ h1, h2, h3, h4 {
   }
 }
 @media (min-width: 1024px) {
-  .partners-item { width: 11rem; }
-  .partners-item img { max-height: 3.5rem; }
-  .partners-track { justify-content: center; }
+  .partners-item { width: 10rem; }
+  .partners-item img { max-height: 4.5rem; }
+  .partners-track { justify-content: center; gap: 1.75rem; }
 }
 @keyframes partners-scroll {
   from { transform: translateX(0); }
