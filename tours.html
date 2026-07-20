@@ -33,6 +33,38 @@
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Your Guide",
+  "url": "https://www.bhutantravelagent.com/index.html",
+  "logo": "https://www.bhutantravelagent.com/assets/images/Logo.png",
+  "image": "https://www.bhutantravelagent.com/assets/images/Logo.png",
+  "description": "Expert local guidance for authentic journeys through Bhutan, the Last Shangri-La.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Norzin Lam",
+    "addressLocality": "Thimphu",
+    "addressCountry": "BT"
+  },
+  "telephone": "+975-17-000-000",
+  "email": "info@bhutantravelagent.com",
+  "areaServed": "Bhutan"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bhutantravelagent.com/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://www.bhutantravelagent.com/tours.html" }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -41,7 +73,8 @@
   <div class="container site-header__bar">
 
     <a href="index.html" class="logo">
-      <img src="assets/images/Logo.png" alt="Your Guide" width="3272" height="1663">
+      <img src="assets/images/logo white.png" alt="Your Guide" class="logo__default" width="428" height="202">
+      <img src="assets/images/Logo.png" alt="Your Guide" class="logo__scrolled" width="3272" height="1663">
     </a>
 
     <div class="btn-row">
@@ -104,7 +137,9 @@
 
     <div class="tours-grid fade-up">
 
+      <!-- ===== CULTURE (3) ===== -->
       <div class="tour-card" data-category="culture">
+        <span class="tour-card__category">Culture</span>
         <img src="assets/images/mask.jpg" alt="Cultural Immersion Tour" class="tour-card__img" width="2560" height="1706" loading="lazy">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
@@ -122,16 +157,17 @@
         </div>
       </div>
 
-      <div class="tour-card" data-category="adventure">
-        <img src="assets/images/jomolhari 2.jpg" alt="Himalayan Trekking" class="tour-card__img" width="2560" height="1706" loading="lazy">
+      <div class="tour-card" data-category="culture">
+        <span class="tour-card__category">Culture</span>
+        <img src="assets/images/The Mindful destination tariff 1.jpg" alt="The Mindful Retreat" class="tour-card__img" width="2560" height="1706" loading="lazy">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
-          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>10 Days</span></p>
-          <h3 class="tour-card__title">Himalayan Trekking</h3>
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>8 Days</span></p>
+          <h3 class="tour-card__title">The Mindful Retreat</h3>
           <div class="tour-card__reveal">
             <div class="tour-card__reveal-inner">
-              <p class="tour-card__desc">Traverse high-altitude trails with panoramic views of the Eastern Himalayas.</p>
-              <a href="contact.html" class="link-arrow">
+              <p class="tour-card__desc">Slow mornings, sunrise hikes, and quiet luxury in Bhutan's most serene valleys.</p>
+              <a href="itinerary-mindful-retreat.html" class="link-arrow">
                 View Itinerary
                 <i data-lucide="arrow-right" class="icon-sm"></i>
               </a>
@@ -141,33 +177,16 @@
       </div>
 
       <div class="tour-card" data-category="culture">
-        <img src="assets/images/The Mindful destination tariff 1.jpg" alt="Luxury Escape" class="tour-card__img" width="2560" height="1706" loading="lazy">
-        <div class="tour-card__overlay"></div>
-        <div class="tour-card__content">
-          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>8 Days</span></p>
-          <h3 class="tour-card__title">Luxury Escape</h3>
-          <div class="tour-card__reveal">
-            <div class="tour-card__reveal-inner">
-              <p class="tour-card__desc">Serene retreats and mindful stays set against Bhutan's quietest valleys.</p>
-              <a href="contact.html" class="link-arrow">
-                View Itinerary
-                <i data-lucide="arrow-right" class="icon-sm"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tour-card" data-category="adventure">
-        <img src="assets/images/birdwatching10.jpg" alt="Wildlife & Nature" class="tour-card__img" width="2560" height="1706" loading="lazy">
+        <span class="tour-card__category">Culture</span>
+        <img src="assets/images/Lhuentse dzong.jpg" alt="Bhutan Cultural Journey" class="tour-card__img" width="2560" height="1706" loading="lazy">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
           <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
-          <h3 class="tour-card__title">Wildlife &amp; Nature</h3>
+          <h3 class="tour-card__title">Bhutan Cultural Journey</h3>
           <div class="tour-card__reveal">
             <div class="tour-card__reveal-inner">
-              <p class="tour-card__desc">Spot rare birds and native wildlife across Bhutan's protected forests.</p>
-              <a href="contact.html" class="link-arrow">
+              <p class="tour-card__desc">Paro, Thimphu, and Punakha — dzongs, sacred temples, and a hike to Tiger's Nest Monastery.</p>
+              <a href="itinerary-sacred-valleys.html" class="link-arrow">
                 View Itinerary
                 <i data-lucide="arrow-right" class="icon-sm"></i>
               </a>
@@ -176,16 +195,76 @@
         </div>
       </div>
 
-      <div class="tour-card" data-category="festival culture">
-        <img src="assets/images/exp_cultural_tour.png" alt="Festival & Monastery Tour" class="tour-card__img" width="640" height="640" loading="lazy">
+      <!-- ===== FESTIVAL (3) ===== -->
+      <div class="tour-card" data-category="festival">
+        <span class="tour-card__category">Festival</span>
+        <img src="assets/images/exp_cultural_tour.png" alt="Tsechu & Monastery Pilgrimage" class="tour-card__img" width="640" height="640" loading="lazy">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
           <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>5 Days</span></p>
-          <h3 class="tour-card__title">Festival &amp; Monastery Tour</h3>
+          <h3 class="tour-card__title">Tsechu &amp; Monastery Pilgrimage</h3>
           <div class="tour-card__reveal">
             <div class="tour-card__reveal-inner">
               <p class="tour-card__desc">Time your visit with Bhutan's vibrant tsechus and cliffside monasteries.</p>
-              <a href="contact.html" class="link-arrow">
+              <a href="itinerary-tsechu-pilgrimage.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card" data-category="festival">
+        <span class="tour-card__category">Festival</span>
+        <img src="assets/images/Tashigang.jpg" alt="Paro Tsechu Spectacular" class="tour-card__img" width="2560" height="1706" loading="lazy">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
+          <h3 class="tour-card__title">Paro Tsechu Spectacular</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Witness the thongdrel unveiling and masked dances at Bhutan's most celebrated tsechu.</p>
+              <a href="itinerary-paro-tsechu.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card" data-category="festival">
+        <span class="tour-card__category">Festival</span>
+        <img src="assets/images/Wangdue.jpg" alt="Black-Necked Crane Festival Journey" class="tour-card__img" width="2560" height="1706" loading="lazy">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
+          <h3 class="tour-card__title">Black-Necked Crane Festival Journey</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Folk dances and rare cranes in the glacial valley of Phobjikha.</p>
+              <a href="itinerary-crane-festival.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== ADVENTURE (3) ===== -->
+      <div class="tour-card" data-category="adventure">
+        <span class="tour-card__category">Adventure</span>
+        <img src="assets/images/jomolhari 2.jpg" alt="Jomolhari Base Camp Trek" class="tour-card__img" width="2560" height="1706" loading="lazy">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>10 Days</span></p>
+          <h3 class="tour-card__title">Jomolhari Base Camp Trek</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Trek beneath Mount Jomolhari through Bhutan's most iconic high-alpine trails.</p>
+              <a href="itinerary-jomolhari-trek.html" class="link-arrow">
                 View Itinerary
                 <i data-lucide="arrow-right" class="icon-sm"></i>
               </a>
@@ -195,15 +274,35 @@
       </div>
 
       <div class="tour-card" data-category="adventure">
-        <img src="assets/images/cycling.png" alt="Cycling Adventure" class="tour-card__img" width="640" height="640" loading="lazy">
+        <span class="tour-card__category">Adventure</span>
+        <img src="assets/images/cycling.png" alt="Backroads Cycling Expedition" class="tour-card__img" width="640" height="640" loading="lazy">
         <div class="tour-card__overlay"></div>
         <div class="tour-card__content">
           <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
-          <h3 class="tour-card__title">Cycling Adventure</h3>
+          <h3 class="tour-card__title">Backroads Cycling Expedition</h3>
           <div class="tour-card__reveal">
             <div class="tour-card__reveal-inner">
               <p class="tour-card__desc">Ride quiet mountain roads through rice terraces and fluttering prayer flags.</p>
-              <a href="contact.html" class="link-arrow">
+              <a href="itinerary-cycling.html" class="link-arrow">
+                View Itinerary
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card" data-category="adventure">
+        <span class="tour-card__category">Adventure</span>
+        <img src="assets/images/birdwatching10.jpg" alt="Punakha Wildlife & Nature Expedition" class="tour-card__img" width="2560" height="1706" loading="lazy">
+        <div class="tour-card__overlay"></div>
+        <div class="tour-card__content">
+          <p class="tour-card__duration"><i data-lucide="clock" class="icon-sm"></i><span>6 Days</span></p>
+          <h3 class="tour-card__title">Punakha Wildlife &amp; Nature Expedition</h3>
+          <div class="tour-card__reveal">
+            <div class="tour-card__reveal-inner">
+              <p class="tour-card__desc">Spot rare birds and native wildlife across Bhutan's protected forests and rivers.</p>
+              <a href="itinerary-wildlife.html" class="link-arrow">
                 View Itinerary
                 <i data-lucide="arrow-right" class="icon-sm"></i>
               </a>
